@@ -14,7 +14,23 @@ Since the row_num row is just to identify the row and does not contain any infor
 
 # Exploratory data analysis
 
+<img width="1189" height="590" alt="image" src="https://github.com/user-attachments/assets/04707502-e33a-4d1e-b307-650caa8358f2" />
+This graph shows that the device used for the session can have a large impact on the average number of interactions per session. Devices with an agent ID of 3, 4 or 5 have a average number of hits of about 2, whereas most other devices have an average number of hits of 15 to 25. 
 
+<img width="1189" height="590" alt="image" src="https://github.com/user-attachments/assets/7e2bf911-eac5-4388-9314-7a0e47f66a43" />
+Most entry pages have a average number of interactions less than 50, but there are some with over 100. There doesn't seem to be a pattern with the numbers given to the different entry pages. It appears that this could have a large impact. 
+
+<img width="1189" height="590" alt="image" src="https://github.com/user-attachments/assets/a36c58d3-0548-486c-809d-c1131468e6b1" />
+This graph looks at the channel the user came to the website through, for example search engine or email. There appears to be a lot of variation in the average number of interactions depending on the channel the user entered through.
+
+<img width="1189" height="590" alt="image" src="https://github.com/user-attachments/assets/9947810c-77c1-4671-afbe-ed15ab793b29" />
+The average number of interactions depending on the time of day appears to vary between about 17 and 20, with it being higher at the start and lower at the end, but staying fairly conisitant in the middle.
+
+<img width="580" height="455" alt="image" src="https://github.com/user-attachments/assets/784bdaca-c9a3-4990-bf9c-0d5d1cd5e923" />
+The largest number of hits occur when the session length is less than 20000 seconds, which is about 5.5 hours. The lowest amount of interactions gradually increases as the session duration increases.
+
+<img width="589" height="455" alt="image" src="https://github.com/user-attachments/assets/2faed5f7-5aad-4882-a656-edcc461e5591" />
+The session duration and the hour of the day of the session appears to have a limit which decreases linearly. The highest duration of a session in the dataset is 86219 seconds, which is 23.9 hours, and the limit decreases of if there was another column for the hour of the day, the limit would be zero. This suggests to me that the dataset only contains sessions that were enclosed within one day and did not pass through midnight, which leaves some of the data that could change some the results to do with longer sessions starting later missing.
 
 # Modeling
 

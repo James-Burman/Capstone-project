@@ -18,6 +18,11 @@ Since the row_num row is just to identify the row and does not contain any infor
 
 # Modeling
 
+The best model was a random forest model. As shown below, the best result for the test root mean square error was when the max depth was 11.
+
+<img width="543" height="413" alt="image" src="https://github.com/user-attachments/assets/467084d9-de76-428d-a60f-6c1044ea518e" />
+
+
 
 
 # Results

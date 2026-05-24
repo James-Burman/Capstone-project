@@ -10,7 +10,7 @@ The dataset contains information about the sessions of users of the Trivago webs
 
 In the dataset, the hits column contains 369446 missing values. Since this is the target column, I removed these rows. There were also 5559 missing values in other columns, namely the path_id_set and session_duration columns. Since there are so few, I removed these columns as well. 
 
-Since the row_num row is just to identify the row and does not contain any information about the session, I dropped this row. The other columns contain information that can be used in the machine learning models to predict the number of hits. 
+Since the row_num row is just to identify the row and does not contain any information about the session, I dropped this row. The other columns contain information that can be used in the machine learning models to predict the number of hits. With the path_id_set column, I split this into two columns, on with the number of entries in that row to represent the number of locations visited, and one with the first entry in this row.
 
 # Exploratory data analysis
 
@@ -22,8 +22,9 @@ The best model was a random forest model. As shown below, the best result for th
 
 <img width="543" height="413" alt="image" src="https://github.com/user-attachments/assets/467084d9-de76-428d-a60f-6c1044ea518e" />
 
+<img width="946" height="568" alt="image" src="https://github.com/user-attachments/assets/b47f6d57-6e93-448e-9c20-385b4dc5dc36" />
 
-
+As shown in the SHAP analysis, the factors with the largest impact on the number of interactions were session duration, the entry page and number of entries in path_id_set, or the number of locations visited on the website during the session. 
 
 # Results
 

@@ -14,6 +14,9 @@ Since the row_num row is just to identify the row and does not contain any infor
 
 # Exploratory data analysis
 
+<img width="1189" height="590" alt="image" src="https://github.com/user-attachments/assets/32671487-41bf-4a37-9717-9e5117aa4e55" />
+The most common number of hits per session is 3, with about 100000 sessions having 3 hits. The number of hits then decreases and has a long tail, with the highest number of hits in a session being 4174.
+
 <img width="1189" height="590" alt="image" src="https://github.com/user-attachments/assets/04707502-e33a-4d1e-b307-650caa8358f2" />
 This graph shows that the device used for the session can have a large impact on the average number of interactions per session. Devices with an agent ID of 3, 4 or 5 have a average number of hits of about 2, whereas most other devices have an average number of hits of 15 to 25. 
 

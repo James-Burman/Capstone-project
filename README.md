@@ -12,6 +12,8 @@ In the dataset, the hits column contains 369446 missing values. Since this is th
 
 Since the row_num row is just to identify the row and does not contain any information about the session, I dropped this row. The other columns contain information that can be used in the machine learning models to predict the number of hits. With the path_id_set column, I split this into two columns, on with the number of entries in that row to represent the number of locations visited, and one with the first entry in this row.
 
+Since the entry page and the first entry in the path_set_id categories had high cardinality, I used target encoding instead of one-hot encoding for these categories. I also made any entries which had less than 10 entries into a 'other' entry to reduce the amount of overfitting with really small groups. 
+
 # Exploratory data analysis
 
 <img width="1189" height="590" alt="image" src="https://github.com/user-attachments/assets/32671487-41bf-4a37-9717-9e5117aa4e55" />
